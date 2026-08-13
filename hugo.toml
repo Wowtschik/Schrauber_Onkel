@@ -1,3 +1,44 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+﻿baseURL = 'https://wowtschik.github.io/Schrauber_Onkel/'
+languageCode = 'de-de'
+title = 'Schrauber-Onkel'
+theme = 'PaperMod'
+
+[params]
+  env = 'production'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  disableSpecial1stPost = true
+  ShowToc = true
+  TocOpen = false
+
+[menu]
+  [[menu.main]]
+    identifier = 'motor'
+    name = 'Motor'
+    url = '/motor/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'getriebe'
+    name = 'Getriebe'
+    url = '/getriebe/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'elektrik'
+    name = 'Elektrik'
+    url = '/elektrik/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'diagnose'
+    name = 'Diagnose'
+    url = '/diagnose/'
+    weight = 40
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
